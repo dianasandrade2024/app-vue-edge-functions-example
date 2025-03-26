@@ -19,17 +19,12 @@
         </p>
         </h3>
         </div>
-
-    
     </div>
   </div>
         
 </template>
 
 <script>
-
-
-import axios from 'axios';
 
 export default{
   name: 'portifolio-card',
@@ -38,14 +33,9 @@ export default{
       message: 'Software Developed',
       name: "Diana Andrade",
     };
-  },
+  },  
 
-  
-
-  methods: {
-    
-  
-  },
+  methods: {},
 }
 </script>
 

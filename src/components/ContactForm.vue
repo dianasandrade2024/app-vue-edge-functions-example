@@ -99,7 +99,7 @@ export default{
     },
      
     createContact() {
-      axios.post(`app-vue-mock.netlify.app/contacts`, this.postData).then((response) => console.log(response))
+      axios.post(`https://api-vue-portifolio.vercel.app/contacts`, this.postData).then((response) => console.log(response))
                
     },
   } 
