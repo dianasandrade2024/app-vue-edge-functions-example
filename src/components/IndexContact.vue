@@ -41,7 +41,7 @@ export default{
   methods: { 
     //para uso do mysql não apagar//
     async getContact(){
-      let result = await axios.get(`https://api-vue-portifolio.vercel.app/contacts`);
+      let result = await axios.get(`https://api-vue-portifolio.vercel.app/api/contacts`);
       this.contacts = result.data;
       console.log(this.contacts);
     }
