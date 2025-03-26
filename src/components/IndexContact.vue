@@ -41,7 +41,7 @@ export default{
   methods: { 
     //para uso do mysql não apagar//
     async getContact(){
-      let result = await axios.get(`http://localhost:3000/contacts`);
+      let result = await axios.get(`app-vue-mock.netlify.app/contacts`);
       this.contacts = result.data;
       console.log(this.contacts);
     }

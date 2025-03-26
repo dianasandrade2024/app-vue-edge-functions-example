@@ -99,7 +99,7 @@ export default{
     },
      
     createContact() {
-      axios.post(`http://localhost:3000/contacts`, this.postData).then((response) => console.log(response))
+      axios.post(`app-vue-mock.netlify.app/contacts`, this.postData).then((response) => console.log(response))
                
     },
   } 
