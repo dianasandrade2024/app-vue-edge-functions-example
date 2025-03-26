@@ -9,19 +9,18 @@
       :value="c.id">
       {{ c.id }}
       {{ c.name }}
-
-      {{ contacts }}
-    
+        
     </div>
 
     
     </div>
           
-  </template>
+</template>
   
 <script>
 
 import axios from 'axios';
+
 export default{
   
   data(){
@@ -42,19 +41,12 @@ export default{
   methods: { 
     //para uso do mysql não apagar//
     async getContact(){
-      let result = await axios.get(`https://api-vue-portifolio.vercel.app/api/api/indexcontact`);
-      //let result = await axios.get(`http://localhost/api/indexcontact`);
+      let result = await axios.get(`http://localhost:3000/contacts`);
       this.contacts = result.data;
       console.log(this.contacts);
     }
   },
-
-  //mounted(){
-   // fetch(`http://localhost:3000/contacts`).then(resp=>resp.json())  
-    //.then(resp=>resp.json())
-    //.then(data=> this.contacts = data)
- // }
-
+ 
 }
 
 </script>

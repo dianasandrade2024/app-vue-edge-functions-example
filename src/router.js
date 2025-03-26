@@ -8,7 +8,6 @@ import IndexContact from './components/IndexContact.vue'
 import EducationCard from './components/EducationCard.vue'
 import ProjectsCard from './components/ProjectsCard.vue'
 
-
 const routes = [
   
   { path: '/', 
@@ -37,6 +36,7 @@ const routes = [
     path:'/myprojects',
     component: ProjectsCard
   },
+  
   
 ]
 
